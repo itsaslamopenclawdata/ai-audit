@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EXAMPLE Sample Report — AI Readiness Mini-Audit</title>
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;max-width:720px;margin:0 auto;padding:32px 20px;color:#1f2937;line-height:1.6}
+h1{font-size:clamp(1.6rem,5vw,2.1rem);line-height:1.25;margin-bottom:8px}h2{margin-top:32px;font-size:1.25rem}
+.sub{color:#4b5563;font-size:1.1rem}.price{font-weight:600;background:#f3f4f6;padding:16px;border-radius:8px}
+.cta{display:inline-block;background:#2563eb;color:#fff;padding:12px 22px;border-radius:8px;text-decoration:none;font-weight:600;margin:6px 8px 6px 0;border:0;font-size:1rem;cursor:pointer}
+.example{border:2px dashed #9ca3af;padding:12px 16px;border-radius:8px;background:#fafafa}.tag{display:inline-block;background:#fde68a;color:#78350f;font-weight:700;padding:2px 8px;border-radius:4px;font-size:.85rem}
+textarea{width:100%;box-sizing:border-box;min-height:110px;font:inherit;padding:10px;border-radius:8px;border:1px solid #d1d5db}
+table{border-collapse:collapse;width:100%;display:block;overflow-x:auto}td,th{border:1px solid #d1d5db;padding:6px;text-align:left}
+footer{margin-top:40px;color:#6b7280;font-size:.9rem}
+</style>
+</head>
+<body>
+<p><span class="tag">EXAMPLE</span> This is a sample report for a fictional business. Not a real client or real result.</p>
+<h1>EXAMPLE — Sample AI Readiness Mini-Audit Report</h1>
+<blockquote>
+<p><strong>EXAMPLE ONLY.</strong> "Greenleaf Interiors" is a fictional business. This is not a real client or real result.</p>
+</blockquote>
+<p><strong>Client:</strong> Greenleaf Interiors (fictional) — 8-person interior design studio
+<strong>Date:</strong> EXAMPLE</p>
+<h2>Summary</h2>
+<p>Greenleaf spends significant weekly time on quotations, answering repeat client questions, and searching past project files. The best near-term wins are a quote-drafting assistant and a searchable knowledge base over past projects. Invoice processing is better served by off-the-shelf tools than custom AI.</p>
+<h2>Current State</h2>
+<ul>
+<li>Quotes built manually in Excel from past projects</li>
+<li>Clients ask similar questions on WhatsApp/email (timelines, materials, pricing)</li>
+<li>Project files scattered across Google Drive folders</li>
+</ul>
+<h2>Top 3 Opportunities</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Opportunity</th>
+<th>Approach</th>
+<th>Effort</th>
+<th>Risk</th>
+<th>Build/Buy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Draft quotes from a short brief using past quotes as reference</td>
+<td>LLM + structured template</td>
+<td>Medium</td>
+<td>Medium (price accuracy; human review required)</td>
+<td>Light build</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Answer repeat client FAQs with drafted replies</td>
+<td>RAG over FAQ + policy docs</td>
+<td>Low</td>
+<td>Low</td>
+<td>Buy/configure</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Search past projects ("show kitchens under budget X with oak")</td>
+<td>RAG over Drive files</td>
+<td>Medium</td>
+<td>Low</td>
+<td>Build or buy</td>
+</tr>
+</tbody>
+</table>
+<h2>Not Recommended (Yet)</h2>
+<ul>
+<li><strong>Fully autonomous client chatbot:</strong> risk of wrong commitments on price/timelines.</li>
+<li><strong>Custom invoice AI:</strong> existing accounting software features are sufficient.</li>
+</ul>
+<h2>Data &amp; Risk Notes</h2>
+<ul>
+<li>Keep a human approving every quote and client reply.</li>
+<li>Remove client personal data before indexing documents.</li>
+</ul>
+<h2>Recommended First Step This Week</h2>
+<p>Collect the 20 most common client questions and answers in one document — this becomes the base for opportunity #2.</p>
+<h2>30-Day Roadmap</h2>
+<ol>
+<li>Week 1: FAQ document + try a drafted-reply tool.</li>
+<li>Week 2–3: Organise Drive folders; pilot search over past projects.</li>
+<li>Week 4: Prototype quote-drafting template with 10 past quotes.</li>
+</ol>
+<p><a href="./">← Back to the AI Readiness Mini-Audit</a></p>
+</body>
+</html>
